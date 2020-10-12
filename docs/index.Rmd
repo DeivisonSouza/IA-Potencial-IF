@@ -180,11 +180,9 @@ Email: deivisonvs@ufpa.br
 — Arthur Lee Samuel
 ]
 
-*Some Studies in Machine Learning Using the Game of Checkers*
+*Some Studies in Machine Learning Using the Game of Checkers* (`r TextCite(myBib, "samuel1959some")`)
 
-`r Citep(myBib, author = "samuel1959some")`
-
-]
+] 
 
 ---
 # Referências
