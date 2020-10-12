@@ -182,7 +182,9 @@ Email: deivisonvs@ufpa.br
 — (Parafraseado de Arthur Lee Samuel, 1959)
 ]
 
-*Some Studies in Machine Learning Using the Game of Checkers* `r Citep(myBib, "samuel1959some")`.
+<br>
+
+<bdi style="color:blue;"> *Some Studies in Machine Learning Using the Game of Checkers* </bdi> `r Citep(myBib, "samuel1959some")`.
 
 ] 
 
