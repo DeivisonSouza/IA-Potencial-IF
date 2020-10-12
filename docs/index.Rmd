@@ -1,12 +1,13 @@
 ---
-title: "Inteligência Artificial:"
+title: "Aprendizado de Máquina .font70[(*Machine Learning*):]"
 subtitle: "Potencial para modelagem de variáveis florestais <BR> <BR>"
 #subtitle: "Potencial para modelagem de variáveis florestais"
-author: "<BR> <BR> <BR> Prof. Dr. Deivison Venicio Souza"
-institute: "Universidade Federal do Pará (UFPA)"
+author: "<BR> <BR> <BR> <BR> Prof. Dr. Deivison Venicio Souza"
+institute: |
+  | Universidade Federal do Pará (UFPA) <BR> <span class="isDisabled"><a href="E-mail: deivisonvs@ufpa.br">E-mail: deivisonvs@ufpa.br</a></span> <BR> <BR> <BR>
 date: | 
-  `r format(Sys.Date(),"%d/%B/%Y")` | 
-   Altamira, Pará <BR> <BR> <BR> <BR>
+  .center[`r format(Sys.Date(),"%d/%B/%Y")` | 
+   Altamira, Pará <BR> <BR> <BR> <BR>]
 encoding: "UTF-8"
 #output: revealjs::revealjs_presentation
 #output: rmdshower::shower_presentation
@@ -70,6 +71,17 @@ style_mono_accent(
   text_font_google   = google_font("Montserrat", "300", "300i"),
   code_font_google   = google_font("Fira Mono")
 )
+```
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "alphabetic",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = FALSE)
+(myBib <- ReadBib("bib/ref.bib", check = FALSE))
 ```
 
 # 👋 Olá!
@@ -144,13 +156,50 @@ Email: deivisonvs@ufpa.br
 ]
 
 ---
+# A IA está no cotidiano!
 
-class: center, middle
-
-# xaringan
-
-### /ʃaː.'riŋ.ɡan/
+* <bdi style="font-weight:bold">1. Reconhecimento Facial</bdi> (Face Recognition)
+    
+ + Como o `Facebook` é capaz de reconhecer uma pessoa em uma foto?
+    
+* <bdi style="font-weight:bold">2. Sistemas de Recomendação</bdi> (*Recommendation Systems*)
+    
+ + Como o `Google Maps` é capaz de traçar a melhor rota para um destino?
+    
+ + Como a `NetFlix` faz para recomendar séries e filmes (e outros) para os usuários? [(SR NetFlix)](https://help.netflix.com/pt/node/100639)
 
 ---
+# Aprendizado de Máquina (*Machine Learning*)
+
+.bg-washed-near-white.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.center[<bdi style="font-weight:bold"> Termo "*Machine Learning*" (Parafraseando Samuel, 1959)</bdi>]
+
+É um <bdi style="font-weight:bold">subconjunto de inteligência artificial</bdi> que frequentemente usa técnicas estatísticas para dar aos computadores a capacidade de <bdi style="font-weight:bold">"aprender"</bdi> com dados, sem serem explicitamente programados.
+
+.tr[
+— Arthur Lee Samuel
+]
+
+*Some Studies in Machine Learning Using the Game of Checkers*
+
+`r Citep(myBib, author = "samuel1959some")`
+
+]
+
+---
+# Referências
+<br>
+
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(myBib)
+```
+
+
+---
+
+
+
+
+
 
 

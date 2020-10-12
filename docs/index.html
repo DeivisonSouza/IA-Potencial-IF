@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Inteligência Artificial:</title>
+    <title>Aprendizado de Máquina .font70[(Machine Learning):]</title>
     <meta charset="utf-8" />
-    <meta name="author" content="   Prof. Dr. Deivison Venicio Souza" />
+    <meta name="author" content="    Prof. Dr. Deivison Venicio Souza" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
     <link href="libs/remark-css/tamu-fonts.css" rel="stylesheet" />
@@ -21,11 +21,11 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Inteligência Artificial:
+# Aprendizado de Máquina .font70[(<em>Machine Learning</em>):]
 ## Potencial para modelagem de variáveis florestais <BR> <BR>
-### <BR> <BR> <BR> Prof. Dr. Deivison Venicio Souza
-### Universidade Federal do Pará (UFPA)
-### <p>12/outubro/2020 | Altamira, Pará <BR> <BR> <BR> <BR></p>
+### <BR> <BR> <BR> <BR> Prof. Dr. Deivison Venicio Souza
+### <div class="line-block">Universidade Federal do Pará (UFPA) <BR> <span class="isDisabled"><a href="E-mail: deivisonvs@ufpa.br">E-mail: deivisonvs@ufpa.br</a></span> <BR> <BR> <BR></div>
+### <p>.center[12/outubro/2020 | Altamira, Pará <BR> <BR> <BR> <BR>]</p>
 
 ---
 
@@ -48,6 +48,8 @@ name: toc
 </style><style>.panelset {
   --panel-tab-color-active: red;
 }</style>
+
+
 
 
 
@@ -121,12 +123,47 @@ Email: deivisonvs@ufpa.br
 ]
 
 ---
+# A IA está no cotidiano!
 
-class: center, middle
+* &lt;bdi style="font-weight:bold"&gt;1. Reconhecimento Facial&lt;/bdi&gt; (Face Recognition)
+    
+ + Como o `Facebook` é capaz de reconhecer uma pessoa em uma foto?
+    
+* &lt;bdi style="font-weight:bold"&gt;2. Sistemas de Recomendação&lt;/bdi&gt; (*Recommendation Systems*)
+    
+ + Como o `Google Maps` é capaz de traçar a melhor rota para um destino?
+    
+ + Como a `NetFlix` faz para recomendar séries e filmes (e outros) para os usuários? [(SR NetFlix)](https://help.netflix.com/pt/node/100639)
 
-# xaringan
+---
+# Aprendizado de Máquina (*Machine Learning*)
 
-### /ʃaː.'riŋ.ɡan/
+.bg-washed-near-white.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.center[&lt;bdi style="font-weight:bold"&gt; Termo "*Machine Learning*" (Parafraseando Samuel, 1959)&lt;/bdi&gt;]
+
+É um &lt;bdi style="font-weight:bold"&gt;subconjunto de inteligência artificial&lt;/bdi&gt; que frequentemente usa técnicas estatísticas para dar aos computadores a capacidade de &lt;bdi style="font-weight:bold"&gt;"aprender"&lt;/bdi&gt; com dados, sem serem explicitamente programados.
+
+.tr[
+— Arthur Lee Samuel
+]
+
+*Some Studies in Machine Learning Using the Game of Checkers*
+
+
+
+]
+
+---
+# Referências
+&lt;br&gt;
+
+
+```
+## You haven't cited any references in this bibliography yet.
+```
+
+NULL
+
 
 ---
     </textarea>
@@ -332,7 +369,7 @@ h2, h3, h4 {
   margin-left: 15px;
 }
 .title-slide h3  {
-  color: #ffcc80;
+  color: #00004d;
   text-shadow: none;
   font-weight: 300;
   font-size: 25px;
@@ -345,10 +382,10 @@ hr, .title-slide h2::after, .mline h1::after {
   content: '';
   display: block;
   border: none;
-  background-color: #EB811B;
-  color: #EB811B;
+  background-color: transparent;
+  color: none;
   height: 1px;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 hr, .mline h1::after {
@@ -379,6 +416,13 @@ div.my-footer span {
     position: absolute;
     left: 15px;
     bottom: 12px;
+}
+
+.isDisabled > a {
+  color: currentColor;
+  display: inline-block;  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
 }
 
 .remark-slide-number {
