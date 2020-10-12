@@ -77,11 +77,11 @@ style_mono_accent(
 library(RefManageR)
 BibOptions(check.entries = FALSE,
            bib.style = "authoryear",
-           cite.style = "alphabetic",
-           style = "markdown",
+           cite.style = "authoryear",
+           style = "html",
            hyperlink = FALSE,
            dashed = FALSE)
-(myBib <- ReadBib("bib/ref.bib", check = FALSE))
+(myBib <- ReadBib("./bib/ref.bib", check = FALSE))
 ```
 
 # 👋 Olá!
@@ -172,15 +172,17 @@ Email: deivisonvs@ufpa.br
 # Aprendizado de Máquina (*Machine Learning*)
 
 .bg-washed-near-white.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-.center[<bdi style="font-weight:bold"> Termo "*Machine Learning*" (Parafraseando Samuel, 1959)</bdi>]
+.center[<bdi style="font-weight:bold"> 🤔 *Machine Learning*</bdi>]
 
-É um <bdi style="font-weight:bold">subconjunto de inteligência artificial</bdi> que frequentemente usa técnicas estatísticas para dar aos computadores a capacidade de <bdi style="font-weight:bold">"aprender"</bdi> com dados, sem serem explicitamente programados.
+<bdi style="font-weight:bold">1959</bdi>: `Arthur Lee Samuel` cunhou pela primeira vez o termo *Machine Learning*.
+
+<bdi style="font-weight:bold">Definição</bdi>: É um `subconjunto de inteligência artificial` que frequentemente usa técnicas estatísticas para dar aos computadores a capacidade de `"aprender"` com dados, sem serem explicitamente programados.
 
 .tr[
-— Arthur Lee Samuel
+— (Parafraseado de Arthur Lee Samuel, 1959)
 ]
 
-*Some Studies in Machine Learning Using the Game of Checkers* (`r TextCite(myBib, "samuel1959some")`)
+*Some Studies in Machine Learning Using the Game of Checkers* `r Citep(myBib, "samuel1959some")`.
 
 ] 
 
