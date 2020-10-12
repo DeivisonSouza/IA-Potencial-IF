@@ -5,7 +5,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Este repositório guarda os arquivos .Rmd e códigos R da palestra assíncrona com tema **Potencial de técnicas de aprendizado de máquina para a modelagem de variáveis florestais** ministrada pelo **Prof. Deivison Venicio Souza** e direcionada aos discentes da disciplina de **inventário florestal** no âmbito da especialização *X* da Universidade Federal do Paraná (UFPR).
+Este repositório guarda os arquivos .Rmd e .R usados na palestra assíncrona com tema **"Aprendizado de Máquina (*Machine Learning*): Potencial para modelagem de variáveis florestais"** ministrada pelo **Prof. Dr. Deivison Venicio Souza**, direcionada aos discentes da disciplina de **inventário florestal** no âmbito da especialização *X* da Universidade Federal do Paraná (UFPR).
 
 # Palestrante :deciduous_tree:
 
