@@ -1,18 +1,19 @@
 ---
-title: |
-  | Inteligência Artificial:
-subtitle: "Potencial para modelagem de variáveis florestais"
-author: "Deivison Venicio Souza"
+title: "Inteligência Artificial:"
+subtitle: "Potencial para modelagem de variáveis florestais <BR> <BR>"
+#subtitle: "Potencial para modelagem de variáveis florestais"
+author: "<BR> <BR> <BR> Prof. Dr. Deivison Venicio Souza"
 institute: "Universidade Federal do Pará (UFPA)"
-date: |
-  `r format(Sys.Date(),"%d/%B/%Y")` |
-  Altamira, Pará
+date: | 
+  `r format(Sys.Date(),"%d/%B/%Y")` | 
+   Altamira, Pará <BR> <BR> <BR> <BR>
+encoding: "UTF-8"
 #output: revealjs::revealjs_presentation
 #output: rmdshower::shower_presentation
 output:
   xaringan::moon_reader:
     includes:
-      after_body: my-custom.css
+      after_body: css/my-custom.css
     css: [default, metropolis, tamu-fonts] #xaringan-themer.css 
     lib_dir: libs
     nature:
@@ -26,19 +27,124 @@ output:
       ratio: "16:9"
     seal: true
 ---
-Imagem de <a href="https://pixabay.com/pt/users/cablemarder-7142084/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2987303">cablemarder</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2987303">Pixabay</a>
 
 name: toc
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(tidyverse)
+
+knitr::opts_chunk$set(
+  fig.showtext = TRUE,
+  fig.width = 16, 
+  fig.height = 8, 
+  dpi = 300
+)
 ```
 
-???
+```{r xaringanExtra, echo=FALSE}
+library(xaringanExtra)
+use_logo(
+  image_url = "fig/ufpa.png",
+  position = css_position(top = ".8em", right = "1em"),
+  width = "140px",
+  height = "140px"
+)
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+
+use_tachyons()
+use_panelset()
+use_clipboard()
+style_panelset(panel_tab_color_active = "red")
+```
+
+```{r xaringanthemer, warning=FALSE, include=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#43418A",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+# 👋 Olá!
+
+## <bdi style="color:magenta;">1. Deivison Souza </bdi>
+
+.pull-left[
+* <bdi style="font-weight:bold">Graduação (Titulação: ano 2008)</bdi>
+    + Universidade Federal Rural da Amazônia (UFRA); e
+    + Título: Bacharel em Engenharia Florestal.
+
+* <bdi style="font-weight:bold">Mestrado (Titulação: ano 2011)</bdi>
+    + Universidade Federal Rural da Amazônia (UFRA);
+    + Programa de Pós-graduação em Ciências Florestais (PPGCF); e
+    + Área de Concentração: Manejo de ecossistemas florestais.
+]
+
+.pull-right[
+* <bdi style="font-weight:bold">Doutorado (Titulação: ano 2020)</bdi>
+    + Universidade Federal do Paraná (UFPR);
+    + Programa de Pós-graduação em Engenharia Florestal (PPGEF); e
+    + Área de Concentração: Manejo Florestal.
+    
+* <bdi style="font-weight:bold">Especialização (Defesa: ano 2019)</bdi>
+    + Universidade Federal do Paraná (UFPR);
+    + Área: Big Data e Data Science
+]
 
 ---
+# 👋 Olá!
+
+.pull-left[
+## <bdi style="color:magenta;">2. Interesses atuais</bdi>
+
+* <bdi style="font-weight:bold">Linguagem de programação</bdi>
+    + R
+    + Python
+    
+* <bdi style="font-weight:bold">Modelagem preditiva aplicada à ciência florestal</bdi>
+    + Aprendizado de máquina
+    
+* <bdi style="font-weight:bold">Visão computacional</bdi> 
+    + reconhecimento de imagens
+    
+* <bdi style="font-weight:bold">Criação de Dashboard - Shiny</bdi>
+]
+
+.pull-right[
+## <bdi style="color:magenta;">3. Websites e contatos </bdi>
+
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<i class="fa fa-github fa-2x"></i>
+<!--use the fa-lg (33% increase), fa-2x, fa-3x, fa-4x, or fa-5x classes-->
+</body>
+</html>
+<bdi style="font-weight:bold">GitHub:</bdi> https://github.com/DeivisonSouza
+
+<span class="iconify" data-icon="fa-brands:orcid" data-inline="false"></span>
+
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2975-0927" href="https://orcid.org/0000-0002-2975-0927" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_128x128.png" style="width:1.5em;margin-right:1em;" alt="ORCID iD icon">https://orcid.org/0000-0002-2975-0927</a></div>
+
+```{r, echo=FALSE, out.width='20%', fig.align='center', fig.cap=''}
+knitr::include_graphics('fig/ORCID.png')
+```
+
+Email: deivisonvs@ufpa.br
+]
+
+---
+
 class: center, middle
 
 # xaringan
@@ -46,76 +152,5 @@ class: center, middle
 ### /ʃaː.'riŋ.ɡan/
 
 ---
-class: inverse, center, middle
 
-# Get Started
-
----
-
-# Hello World
-
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
-
-```{r eval=FALSE, tidy=FALSE}
-devtools::install_github("yihui/xaringan")
-```
-
---
-
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](http://slides.yihui.org/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
-]
-
----
-background-image: url(`r xaringan:::karl`)
-background-position: 50% 50%
-class: center, bottom, inverse
-
-# You only live once!
-
----
-
-# Hello Ninja
-
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
-
-1. The [remark.js](https://remarkjs.com) library;
-
-1. The **xaringan** package;
-
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
-
----
-
-# remark.js
-
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
-
-- create a new slide (Markdown syntax<sup>*</sup> and slide properties);
-
-- format a slide (e.g. text alignment);
-
-- configure the slideshow;
-
-- and use the presentation (keyboard shortcuts).
-
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
-
----
 
