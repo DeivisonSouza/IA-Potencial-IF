@@ -196,24 +196,65 @@ knitr::include_graphics('fig/ML.png')
 ```
 
 ---
+class: middle, center
 # Regressão linear clássica x aprendizado de máquina
 
 ```{r, echo=FALSE, out.width='48%', fig.align='center', fig.cap=''}
 knitr::include_graphics('fig/SWOT.png')
 ```
 .left[.footnote[Fonte: Souza (2020).]]
+
+---
+background-image: url(fig/white.jpg)
+background-size: cover
+
+# Framework CARET - Linguagem R
+
+.font300[.thick[CARET]]
+	
+.font200[(.red[C]lassication .red[A]nd .red[Re]gression .red[T]raining)]
+	
+`r Citep(myBib, c("kuhn2013applied", "R-caret"))`.
+		
+.font120["Constitui um conjunto de funções que tentam simplificar <br> o processo de construção de modelos preditivos."]
+
+<br> <br> <br>
+
+Web page: [CARET Package](https://topepo.github.io/caret/index.html)
+
+.left[.footnote[Imagem de <a href="https://pixabay.com/pt/users/pen_ash-5526837/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5358904">pen_ash</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5358904">Pixabay</a>]]
 ---
 
-# Fluxograma - Construção de modelos de aprendizado de máquina
+background-image: url(fig/white.jpg)
+background-size: cover
+
+# Fluxograma - Construção de modelos de AM usando CARET
 
 ```{r, echo=FALSE, out.width='90%', fig.align='center', fig.cap=''}
 knitr::include_graphics('fig/FM.png')
 ```
 .left[.footnote[Fonte: Souza (2020).]]
+
+---
+class: inverse, middle, center
+background-image: url(fig/imgC.jpg)
+background-size: cover
+
+<br> <br>
+## .thick[.black[MACHINE LEARNING NO R]]
+
+<br> <br> <br>
+.left[.thick[.black[Acesse o R-script:]]
+
+[01-R-Operators](https://deivisonsouza.github.io/R-Introduction/R-scripts/01-R-Operators.R)]
+
+.left[.footnote[Créditos: Imagem de .green[Willas Soares].]]
+
 ---
 
 
 
+---
 # Referências
 <br>
 

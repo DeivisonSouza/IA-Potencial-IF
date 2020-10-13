@@ -140,24 +140,6 @@ hr, .mline h1::after {
   margin: 10px 15px 0 15px;
 }
 
-div.my-footer {
-    background-color: #000000;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 45px;
-    width: 100%;
-    margin-left: 0px;
-}
-
-div.my-footer span {
-    font-size: 12pt;
-    color: #FFFFFF;
-    position: absolute;
-    left: 15px;
-    bottom: 12px;
-}
-
 .isDisabled > a {
   color: currentColor;
   display: inline-block;  /* For IE11/ MS Edge bug */
@@ -321,6 +303,14 @@ div.my-footer span {
 }
 .font200 {
   font-size: 200%;
+}
+
+.font250 {
+  font-size: 250%;
+}
+
+.font300 {
+  font-size: 300%;
 }
 
 
