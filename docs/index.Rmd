@@ -189,6 +189,31 @@ Email: deivisonvs@ufpa.br
 ] 
 
 ---
+# Machine Learning: Tipos
+
+```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap=''}
+knitr::include_graphics('fig/ML.png')
+```
+
+---
+# Regressão linear clássica x aprendizado de máquina
+
+```{r, echo=FALSE, out.width='48%', fig.align='center', fig.cap=''}
+knitr::include_graphics('fig/SWOT.png')
+```
+.left[.footnote[Fonte: Souza (2020).]]
+---
+
+# Fluxograma - Construção de modelos de aprendizado de máquina
+
+```{r, echo=FALSE, out.width='90%', fig.align='center', fig.cap=''}
+knitr::include_graphics('fig/FM.png')
+```
+.left[.footnote[Fonte: Souza (2020).]]
+---
+
+
+
 # Referências
 <br>
 
