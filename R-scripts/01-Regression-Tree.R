@@ -14,47 +14,42 @@ easypackages::libraries("caret","data.table","tidyverse",
 data <- fread("Tectona.csv", stringsAsFactors=T)
 
 ## 4: Engenharia de recursos ----------------------------------------------
-data[,lnVR:=log(VR)
-][,D2:=D^2
-][,lnD:=log(D)
-][,invD:=1/D
-][,D2H:=D^2*H
-][,lnH:=log(H)
-][,DH2:=D*H^2
-][,lnD2H:=log(D^2*H)
-][,H2:=H^2
-][,DH:=D*H]
+data[,D2:=D^2
+     ][,lnD:=log(D)
+       ][,invD:=1/D
+         ][,D2H:=D^2*H
+           ][,lnH:=log(H)
+             ][,DH2:=D*H^2
+               ][,lnD2H:=log(D^2*H)
+                 ][,H2:=H^2
+                   ][,DH:=D*H]
 
-# Divisão aleatória estratificada
-#----------------------------------------------------------
+## 5: Divisão aleatória estratificada ------------------------------------
 set.seed(100)
 trainIndex <- createDataPartition(y=data$Esp,p=.80,list=FALSE)
 trainingSet <- data[trainIndex,][,-"VR"]
 testSet <- data[-trainIndex,][,-"VR"]
 
-#----------------------------------------------------------
-## CONFIGURACAO DO TREINAMENTO
-#----------------------------------------------------------
+## 6: Configuração do treinamento ----------------------------------------
 source("Summary.R")
 
-fitControl <- trainControl(method="cv",number=10,
-                           returnResamp="final",savePredictions=TRUE,
+fitControl <- trainControl(method="cv", number=10,
+                           returnResamp="final", savePredictions=TRUE,
                            allowParallel=T, summaryFunction=Summary,
                            verboseIter=T, selectionFunction="oneSE")
 
-#----------------------------------------------------------
-## CONSTRUÇÃO DE MODELOS PREDITIVOS
-#----------------------------------------------------------
-# Grade de hiperparâmetros
+## 7: Construção de modelos preditivos -----------------------------------
+
+### 7.1: Hiperparâmetros candidatos --------------------------------------
 tuneGrid <- expand.grid(cp = seq(0.00001, 0.001, 0.00001))
 
-# Ajuste de hiperparâmetros
+### 7.2: Ajuste de hiperparâmetros (Validação cruzada)
 set.seed(1000)
 cartTuneD <- train(lnVR ~.,
-                   data=trainingSet[,c(2,4:7)],
-                   method="rpart",
-                   tuneGrid=tuneGrid,
-                   trControl=fitControl)
+                   data = trainingSet[,c(2,4:7)],
+                   method = "rpart",
+                   tuneGrid = tuneGrid,
+                   trControl = fitControl)
 
 plot(cartTuneD)
 
@@ -94,9 +89,8 @@ varImp(cartTuneD)
 ggplot(varImp(cartTuneD))
 
 # Salva e ler os modelos
-saveRDS(cartTuneD,'Modelos/cartTuneD.rds')
-#save(cartTuneD, file='Modelos/cartTuneDlnV.rda')
-#cartTuneD<-readRDS('Modelos/cartTuneDlnV.rds')
+saveRDS(cartTuneD,'m_RT.rds')
+# m_RT <- readRDS('m_RT.rds')
 
 # Desempenho no conjunto de treino
 data <- data.frame(obs = trainingSet$lnVR,
