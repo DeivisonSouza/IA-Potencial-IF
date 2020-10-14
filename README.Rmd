@@ -59,18 +59,7 @@ Este repositório guarda os arquivos .Rmd e .R usados na palestra assíncrona co
 
 O slide da palestra assíncrona intitulada **"Aprendizado de Máquina (Machine Learning): Potencial para modelagem de variáveis florestais"** está disponível a seguir.
 
-#:ledger: Slide [1](https://deivisonsouza.github.io/IA-Potencial-IF/docs/index.html)
-
-```{r, echo = FALSE}
-knitr::kable(
-  tibble::tibble(
-    Slide <- list_github_files(repo=repo, "docs/", "html"),
-    Link <- paste0("https://deivisonsouza.github.io/", repo, "/", Slide)
-  ) %>% 
-    dplyr::filter(!stringr::str_detect(Slide, "_files/"))
-)
-
-```
+#:ledger: [Slide da apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/docs/index.html)
 
 # Palestrante :deciduous_tree:
 

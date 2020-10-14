@@ -16,13 +16,12 @@ Universidade Federal do Paraná (UFPR).
 
 # Slide da palestra
 
-O slide da palestra síncrona intitulada **“Aprendizado de Máquina
+O slide da palestra assíncrona intitulada **“Aprendizado de Máquina
 (Machine Learning): Potencial para modelagem de variáveis florestais”**
 está disponível a seguir.
 
-| Slide           | Link                                                              |
-| :-------------- | :---------------------------------------------------------------- |
-| docs/index.html | <https://deivisonsouza.github.io/IA-Potencial-IF/docs/index.html> |
+\#:ledger: [Slide da
+apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/docs/index.html)
 
 # Palestrante :deciduous\_tree:
 
