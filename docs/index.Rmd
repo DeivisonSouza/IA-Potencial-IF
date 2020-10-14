@@ -246,7 +246,7 @@ background-size: cover
 <br> <br>
 .left[.thick[.black[Acesse o R-script:]]
 
-[01-Regression-Tree](https://deivisonsouza.github.io/IA-Potencial-IF/R-scripts/01-Regression-Tree.R)
+[01-wkNN](https://deivisonsouza.github.io/IA-Potencial-IF/R-scripts/01-wkNN.R)
 
 .thick[.black[Acesse os dados:]]
 
