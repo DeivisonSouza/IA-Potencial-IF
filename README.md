@@ -1,8 +1,4 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-<!-- Emprestei a função list_github_files() da Curso-R (https://github.com/curso-r). Na verdade a ideia por trás desse readme emprestei da Curso-R. Achei excelente!-->
-
 # Olá, seja bem vindo(a)\! :smiley: :grin:
 
 # Descrição

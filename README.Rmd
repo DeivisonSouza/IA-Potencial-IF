@@ -6,49 +6,6 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-library(magrittr)
-repo <- "IA-Potencial-IF"
-```
-
-<!-- Emprestei a função list_github_files() da Curso-R (https://github.com/curso-r). Na verdade a ideia por trás desse readme emprestei da Curso-R. Achei excelente!-->
-
-```{r, include = FALSE}
-list_github_files <- function(repo, dir = NULL, ext = NULL) {
-
-  req <- httr::GET(
-    paste0(
-      "https://api.github.com/repos/DeivisonSouza/",
-      repo,
-      "/git/trees/master?recursive=1"
-    )
-  )
-
-  httr::stop_for_status(req)
-
-  arquivos <- unlist(
-    lapply(httr::content(req)$tree, "[", "path"),
-    use.names = FALSE
-  )
-
-  if (!is.null(dir)) {
-    arquivos <- grep(dir, arquivos, value = TRUE, fixed = TRUE)
-  }
-
-  if (!is.null(ext)) {
-    arquivos <- arquivos[grep(paste0(ext, "$"), arquivos)]
-  }
-
-  return(arquivos)
-}
-```
-
 # Olá, seja bem vindo(a)! :smiley: :grin:
 
 # Descrição
