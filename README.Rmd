@@ -16,7 +16,7 @@ Este repositório guarda os arquivos .Rmd e .R usados na palestra assíncrona co
 
 O slide da palestra assíncrona intitulada **"Aprendizado de Máquina (Machine Learning): Potencial para modelagem de variáveis florestais"** está disponível a seguir.
 
-#:ledger: [Slide da apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/docs/index.html)
+#:ledger: [Slide da apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/)
 
 # Palestrante :deciduous_tree:
 

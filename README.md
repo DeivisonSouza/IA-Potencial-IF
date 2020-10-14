@@ -17,7 +17,7 @@ O slide da palestra assíncrona intitulada **“Aprendizado de Máquina
 está disponível a seguir.
 
 \#:ledger: [Slide da
-apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/docs/index.html)
+apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/)
 
 # Palestrante :deciduous\_tree:
 
