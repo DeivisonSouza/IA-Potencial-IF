@@ -262,9 +262,27 @@ background-size: cover
 ```{r refs, echo=FALSE, results="asis"}
 PrintBibliography(myBib)
 ```
-
 ---
+class: inverse, middle
+background-image: url(fig/white.jpg)
+background-size: cover
 
+.pull-left[
+.font300[.thick[.black[Obrigado!]]] <br> <br> <br> <br>
+
+
+.left[
+.thick[.black[**Contato**:]]
+
+.black[Email:] <a href="mailto:deivisonvs@ufpa.br">deivisonvs@ufpa.br</a>
+
+.black[Github:] <a href="https://github.com/DeivisonSouza">@DeivisonSouza</a>
+
+<br> <br>
+.font80[.black[Os códigos e demais arquivos desta apresentação estão disponíveis no repositório GitHub:] [IA-Potencial-IF](https://github.com/DeivisonSouza/IA-Potencial-IF).]
+
+]
+]
 
 
 
