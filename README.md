@@ -1,12 +1,48 @@
-# Olá, seja bem vindo(a)! :smiley: :grin:
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+<!-- Emprestei a função list_github_files() da Curso-R (https://github.com/curso-r). Na verdade a ideia por trás desse readme emprestei da Curso-R. Achei excelente!-->
+
+# Olá, seja bem vindo(a)\! :smiley: :grin:
 
 # Descrição
 
-<!-- badges: start -->
-<!-- badges: end -->
+Este repositório guarda os arquivos .Rmd e .R usados na palestra
+assíncrona com tema **“Aprendizado de Máquina (Machine Learning):
+Potencial para modelagem de variáveis florestais”** ministrada pelo
+**Prof. Dr. Deivison Venicio Souza**, direcionada aos discentes da
+disciplina de inventário florestal no âmbito da especialização X da
+Universidade Federal do Paraná (UFPR).
 
-Este repositório guarda os arquivos .Rmd e .R usados na palestra assíncrona com tema **"Aprendizado de Máquina (*Machine Learning*): Potencial para modelagem de variáveis florestais"** ministrada pelo **Prof. Dr. Deivison Venicio Souza**, direcionada aos discentes da disciplina de **inventário florestal** no âmbito da especialização *X* da Universidade Federal do Paraná (UFPR).
+# Slide da palestra
 
-# Palestrante :deciduous_tree:
+O slide da palestra síncrona intitulada **“Aprendizado de Máquina
+(Machine Learning): Potencial para modelagem de variáveis florestais”**
+está disponível a seguir.
 
-**Deivison Venicio Souza** possui graduação em :deciduous_tree: **Engenharia Florestal** :deciduous_tree: pela Universidade Federal Rural da Amazônia (2008), Mestrado em Ciências Florestais pela Universidade Federal Rural da Amazônia (2011) e Doutorado em Engenharia Florestal pela Universidade Federal do Paraná. No período de 2009 a 2011 exerceu o cargo de Analista Ambiental da Secretaria Estadual de Meio Ambiente do Pará, na Gerência de Projetos Agrossilvipastoris (GEPAF), com atuação direta na etapa de análise técnica, para fins de licenciamento ambiental, de Planos de Manejo Florestal Sustentável (PMFS), Projetos de Desbastes e Reflorestamento e Supressão Florestal. Desde 2011 é professor da Faculdade de Engenharia Florestal da Universidade Federal do Pará, Campus Universitário de Altamira, Pará. É responsável por ministrar as disciplinas Estatística Básica, Dendrometria, Experimentação Florestal e Inventário Florestal, integrantes do desenho curricular do Curso de Graduação em Engenharia Florestal. Tem experiência na área de Gestão e Manejo dos Recursos Florestais, com ênfase em Silvicultura de Florestas Naturais, Inventário Florestal e Mensuração Florestal. Seus interesses atuais incluem Aprendizado de Máquina e Visão Computacional aplicada à Ciência Florestal, com uso das Linguagens de programação R e Python.
+| Slide           | Link                                                              |
+| :-------------- | :---------------------------------------------------------------- |
+| docs/index.html | <https://deivisonsouza.github.io/IA-Potencial-IF/docs/index.html> |
+
+# Palestrante :deciduous\_tree:
+
+**Deivison Venicio Souza** possui graduação em :deciduous\_tree:
+**Engenharia Florestal** :deciduous\_tree: pela Universidade Federal
+Rural da Amazônia (2008), Mestrado em Ciências Florestais pela
+Universidade Federal Rural da Amazônia (2011) e Doutorado em Engenharia
+Florestal pela Universidade Federal do Paraná. No período de 2009 a 2011
+exerceu o cargo de Analista Ambiental da Secretaria Estadual de Meio
+Ambiente do Pará, na Gerência de Projetos Agrossilvipastoris (GEPAF),
+com atuação direta na etapa de análise técnica, para fins de
+licenciamento ambiental, de Planos de Manejo Florestal Sustentável
+(PMFS), Projetos de Desbastes e Reflorestamento e Supressão Florestal.
+Desde 2011 é professor da Faculdade de Engenharia Florestal da
+Universidade Federal do Pará, Campus Universitário de Altamira, Pará. É
+responsável por ministrar as disciplinas Estatística Básica,
+Dendrometria, Experimentação Florestal e Inventário Florestal,
+integrantes do desenho curricular do Curso de Graduação em Engenharia
+Florestal. Tem experiência na área de Gestão e Manejo dos Recursos
+Florestais, com ênfase em Silvicultura de Florestas Naturais, Inventário
+Florestal e Mensuração Florestal. Seus interesses atuais incluem
+Aprendizado de Máquina e Visão Computacional aplicada à Ciência
+Florestal, com uso das Linguagens de programação R e Python.
