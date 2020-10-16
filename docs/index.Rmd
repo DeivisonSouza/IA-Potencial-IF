@@ -32,7 +32,7 @@ output:
 name: toc
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
+options(htmltools.dir.version = FALSE, knitr.graphics.auto_pdf = TRUE)
 library(tidyverse)
 
 knitr::opts_chunk$set(
@@ -41,6 +41,7 @@ knitr::opts_chunk$set(
   fig.height = 8, 
   dpi = 300
 )
+
 ```
 
 ```{r xaringanExtra, echo=FALSE}
@@ -189,13 +190,6 @@ Email: deivisonvs@ufpa.br
 ] 
 
 ---
-# Machine Learning: Tipos
-
-```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap=''}
-knitr::include_graphics('fig/ML.png')
-```
-
----
 background-image: url(fig/white.jpg)
 background-size: cover
 # Aplicações nas ciências florestais
@@ -203,12 +197,16 @@ background-size: cover
 ```{r, echo=FALSE, out.width='57%', fig.align='center', fig.cap=''}
 knitr::include_graphics('fig/MindMap.png')
 ```
+
 .left[.footnote[Fonte: O Autor.]]
 
 ---
-# Aplicações nas ciências florestais
+# Técnicas de AM exploradas
 
-Nas ciências florestais, as aplicações mais recentes usando técnicas de ``Aprendizado Supervisionado'' incluem: 1) modelagem de variáveis biométricas, tais como altura \cite{da2013aplicaccao}, volume de árvores \cite{soares2011recursive, binoti2014configuraccao}, afilamento do fuste \cite{schikowski2015estudo, schikowski2018modeling}, biomassa \cite{fehrmann2008comparison, sanquetta2015comparison, vahedi2016artificial}, carbono \cite{sanquetta:2013use}, volume e espessura de casca \cite{diamantopoulou2010modelling, nieto2012support}, e densidade básica da madeira \cite{leite2016redes}; 2) modelagem de crescimento individual e produção florestal \cite{ashraf2015novel}; 3) modelagem da mortalidade, sobrevivência e recrutamento \cite{Reis2018, Rocha2018, Reis2019}; 4) modelagem de atributos florestais a partir de dados de sensoriamento remoto \cite{aguirre2009mapping, mcroberts2012estimating}; 5) mapeamento e classificação de florestas \cite{kuplich2006classifying}; 6) reconhecimento de espécies florestais \cite{martins2013database, paula2014forest, martins2015forest, maruyama2018automatic}; 7) reconhecimento de doenças em plantas \cite{singh2017detection}; 8) previsão de incêndios florestais \cite{sakr2010artificial}.
+```{r, echo=FALSE, out.width='70%', fig.align='center', fig.cap='', dpi=600}
+knitr::include_graphics('fig/ML-TEC.png')
+```
+.left[.footnote[Fonte: O Autor.]]
 
 ---
 background-image: url(fig/white.jpg)
