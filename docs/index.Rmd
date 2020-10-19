@@ -1,13 +1,13 @@
 ---
-title: "Aprendizado de Máquina .font70[(*Machine Learning*):]"
-subtitle: "Potencial para modelagem de variáveis florestais <BR> <BR>"
+title: ".font120[Aprendizado de Máquina <BR> no Inventário Florestal:]"
+subtitle: "Técnicas, Modelagem e Aplicação Web  <BR> <BR>"
 #subtitle: "Potencial para modelagem de variáveis florestais"
-author: "<BR> <BR> <BR> <BR> Prof. Dr. Deivison Venicio Souza"
+author: "<BR> Prof. Dr. Deivison Venicio Souza"
 institute: |
-  | Universidade Federal do Pará (UFPA) <BR> <span class="isDisabled"><a href="E-mail: deivisonvs@ufpa.br">E-mail: deivisonvs@ufpa.br</a></span> <BR> <BR> <BR>
+  | Universidade Federal do Pará (UFPA) <BR> <span class="isDisabled"><a href="E-mail: deivisonvs@ufpa.br">E-mail: deivisonvs@ufpa.br</a></span> <BR> <BR>
 date: | 
   .center[`r format(Sys.Date(),"%d/%B/%Y")` | 
-   Altamira, Pará <BR> <BR> <BR> <BR>]
+   Altamira, Pará <BR> ]
 encoding: "UTF-8"
 #output: revealjs::revealjs_presentation
 #output: rmdshower::shower_presentation
