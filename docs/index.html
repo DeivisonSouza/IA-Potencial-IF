@@ -7,7 +7,6 @@
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
     <link href="libs/remark-css/tamu-fonts.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-logo/logo.js"></script>
     <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
@@ -25,7 +24,7 @@ class: center, middle, inverse, title-slide
 ## Potencial para modelagem de variáveis florestais <BR> <BR>
 ### <BR> <BR> <BR> <BR> Prof. Dr. Deivison Venicio Souza
 ### <div class="line-block">Universidade Federal do Pará (UFPA) <BR> <span class="isDisabled"><a href="E-mail: deivisonvs@ufpa.br">E-mail: deivisonvs@ufpa.br</a></span> <BR> <BR> <BR></div>
-### <p>.center[16/outubro/2020 | Altamira, Pará <BR> <BR> <BR> <BR>]</p>
+### <p>.center[19/outubro/2020 | Altamira, Pará <BR> <BR> <BR> <BR>]</p>
 
 ---
 
@@ -34,6 +33,21 @@ name: toc
 
 
 
+<script>
+(function() {
+let tries = 0
+function addLogo() {
+  if (typeof slideshow === 'undefined') {
+    ++tries < 10 ? setTimeout(addLogo, 100) : null
+    return
+  } else {
+  	document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+    	.forEach(el => el.innerHTML += '<div class="xaringan-extra-logo"></div>')
+  }
+}
+document.addEventListener('DOMContentLoaded', addLogo)
+})()
+</script>
 <style type="text/css">
 .xaringan-extra-logo {
   width: 140px;
@@ -156,8 +170,6 @@ Email: deivisonvs@ufpa.br
 ] 
 
 ---
-background-image: url(fig/white.jpg)
-background-size: cover
 # Aplicações nas ciências florestais
 
 &lt;img src="fig/MindMap.png" width="57%" style="display: block; margin: auto;" /&gt;
@@ -165,9 +177,9 @@ background-size: cover
 .left[.footnote[Fonte: O Autor.]]
 
 ---
-# Técnicas de AM exploradas
+# AM no Inventário Florestal: técnicas e potencial
 
-&lt;img src="fig/ML-TEC.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;img src="fig/ML-TEC.png" width="85%" style="display: block; margin: auto;" /&gt;
 .left[.footnote[Fonte: O Autor.]]
 
 ---

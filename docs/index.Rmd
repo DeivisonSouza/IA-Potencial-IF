@@ -11,6 +11,10 @@ date: |
 encoding: "UTF-8"
 #output: revealjs::revealjs_presentation
 #output: rmdshower::shower_presentation
+header-includes: 
+   - \usepackage{tikz}
+   - \usetikzlibrary{mindmap,trees}
+   - \usepackage{verbatim}
 output:
   xaringan::moon_reader:
     includes:
@@ -190,8 +194,6 @@ Email: deivisonvs@ufpa.br
 ] 
 
 ---
-background-image: url(fig/white.jpg)
-background-size: cover
 # Aplicações nas ciências florestais
 
 ```{r, echo=FALSE, out.width='57%', fig.align='center', fig.cap=''}
@@ -201,9 +203,9 @@ knitr::include_graphics('fig/MindMap.png')
 .left[.footnote[Fonte: O Autor.]]
 
 ---
-# Técnicas de AM exploradas
+# AM no Inventário Florestal: técnicas e potencial
 
-```{r, echo=FALSE, out.width='70%', fig.align='center', fig.cap='', dpi=600}
+```{r, echo=FALSE, out.width='85%', fig.align='center', fig.cap='', dpi=600}
 knitr::include_graphics('fig/ML-TEC.png')
 ```
 .left[.footnote[Fonte: O Autor.]]
