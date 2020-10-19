@@ -13,8 +13,9 @@ encoding: "UTF-8"
 #output: rmdshower::shower_presentation
 header-includes: 
    - \usepackage{tikz}
-   - \usetikzlibrary{mindmap,trees}
+   - \usepackage[hidelinks,pdfencoding=auto]{hyperref}
    - \usepackage{verbatim}
+   - \usepackage[utf8]{inputenc}
 output:
   xaringan::moon_reader:
     includes:
@@ -43,7 +44,9 @@ knitr::opts_chunk$set(
   fig.showtext = TRUE,
   fig.width = 16, 
   fig.height = 8, 
-  dpi = 300
+  dpi = 600,
+  fig.align='center', 
+  dev.args=list(bg='transparent')
 )
 
 ```
@@ -192,6 +195,13 @@ Email: deivisonvs@ufpa.br
 <bdi style="color:blue;"> *Some Studies in Machine Learning Using the Game of Checkers* </bdi> `r Citep(myBib, "samuel1959some")`.
 
 ] 
+---
+# Tipos
+
+```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap='', dpi=600}
+knitr::include_graphics('fig/ML.png')
+```
+.left[.footnote[Fonte: O Autor.]]
 
 ---
 # Aplicações nas ciências florestais
@@ -209,6 +219,59 @@ knitr::include_graphics('fig/MindMap.png')
 knitr::include_graphics('fig/ML-TEC.png')
 ```
 .left[.footnote[Fonte: O Autor.]]
+
+---
+# Modelagem preditiva: linguagens (softwares) e frameworks
+
+```{r, engine='tikz', cache=TRUE, echo=FALSE, out.width='50%', bg = "transparent"}
+\usetikzlibrary{mindmap}
+\begin{tikzpicture}
+		[mindmap,
+		every node/.style={concept, execute at begin node=\hskip0pt, font=\bfseries},
+		root concept/.append style={concept color=black, fill=white, line width=1ex, text=black, font=\huge\bfseries},
+		method a/.style={concept color=red, line width=1ex, text=white},
+		method b/.style={concept color=orange, line width=1ex, text=white},
+		method c/.style={concept color=brown, line width=1ex, text=white},
+		methods a/.style={concept color=red!50, line width=1ex, text=black},
+		methods b/.style={concept color=orange!50, line width=1ex, text=black},
+		methods c/.style={concept color=brown!50, line width=1ex, text=black},
+		grow cyclic,
+		level 1/.append style={level distance=4.5cm, sibling angle=60},
+		level 2/.append style={level distance=3cm, sibling angle=45}]
+		\node [root concept] {Liguagens/ \\ Software} % root
+		child [missing] {}
+		child [missing] {}
+		child [missing] {}
+		child [method a] { node {Python}
+			child [methods a] { node {A1} }
+			child [methods a] { node {A2} }
+			child [methods a] { node {A3} }
+			child [methods a] { node {A4} }
+			child [methods a] { node {A5} }
+			child [methods a] { node {A6} }
+			child [methods a] { node {A7} } }
+		child [missing] {}
+		child [method b] { node {R}
+			child [methods b] { node {B1} }
+			child [methods b] { node {B2} }
+			child [methods b] { node {B3} }
+			child [methods b] { node {B4} }
+			child [methods b] { node {B5} }
+			child [methods b] { node {B6} }
+			child [methods b] { node {B7} } }
+		child [missing] {}
+		child [method c] { node {Weka}
+			child [methods c] { node {C1} }
+			child [methods c] { node {C2} }
+			child [methods c] { node {C3} }
+			child [methods c] { node {C4} }
+			child [methods c] { node {C5} }
+			child [methods c] { node {C6} }
+			child [methods c] { node {C7} } };
+		\end{tikzpicture}
+```
+
+
 
 ---
 background-image: url(fig/white.jpg)
