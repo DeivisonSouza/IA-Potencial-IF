@@ -205,7 +205,7 @@ knitr::include_graphics('fig/MindMap.png')
 ---
 # AM no Inventário Florestal: técnicas e potencial
 
-```{r, echo=FALSE, out.width='85%', fig.align='center', fig.cap='', dpi=600}
+```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap='', dpi=600}
 knitr::include_graphics('fig/ML-TEC.png')
 ```
 .left[.footnote[Fonte: O Autor.]]
