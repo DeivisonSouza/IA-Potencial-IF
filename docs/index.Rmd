@@ -193,13 +193,42 @@ Email: deivisonvs@ufpa.br
 <bdi style="color:blue;"> *Some Studies in Machine Learning Using the Game of Checkers* </bdi> `r Citep(myBib, "samuel1959some")`.
 
 ] 
+
 ---
-# Tipos
+# Aprendizado de Máquina: um subconjunto da IA!
+
+```{r, echo=FALSE, out.width='50%', fig.align='center', fig.cap='', dpi=600}
+knitr::include_graphics('fig/diag.png')
+```
+.left[.footnote[Fonte: [Bial-R](https://www.bial-r.com/2019/05/22/comprendre-le-machine-learning-et-le-deep-learning/)]]
+
+---
+# Tipos de Aprendizagem
 
 ```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap='', dpi=600}
 knitr::include_graphics('fig/ML.png')
 ```
 .left[.footnote[Fonte: O Autor.]]
+
+---
+# Aprendizado Supervisionado
+
+.bg-washed-near-white.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.center[<bdi style="font-weight:bold"> *Classificação*</bdi>]
+
+Uma tarefa de classificação é quando a .thick[variável resposta é uma categoria].
+
+Ex.: Reconhecimento de espécies florestais a partir de imagens.
+] 
+
+
+.bg-washed-near-white.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.center[<bdi style="font-weight:bold"> *Regressão*</bdi>]
+
+Um tarefa de regressão é quando a .thick[variável resposta é um valor real (numérica)].
+
+Ex.: Biomassa, Volume, Altura de árvores, entre outros.
+] 
 
 ---
 # Aplicações nas ciências florestais
@@ -237,9 +266,14 @@ knitr::include_graphics('fig/ML-FR.png')
 
 .pull-right[
 <BR> <BR> <BR> <BR> <BR>
-Veja outros pacotes disponíveis em Task View:
+.thick[Veja outros pacotes disponíveis em Task View:]
 
 [Machine Learning & Statistical learning](https://cran.r-project.org/)
+
+<BR> <BR>
+.thick[Web scraping feito em 21/07/2018:]
+
+102 pacotes de AM publicados no CRAN Task View.
 ]
 
 .left[.footnote[Fonte: O Autor.]]
@@ -293,6 +327,33 @@ background-size: cover
 [Tectona-grandis](https://deivisonsouza.github.io/IA-Potencial-IF/R-scripts/Tectona.csv)]
 
 .left[.footnote[Créditos: Imagem de .green[Willas Soares].]]
+---
+class: inverse, top
+background-image: url(fig/white.jpg)
+background-size: cover
+
+## .thick[.black[Como disponibilizar os modelos de aprendizado de máquina?]]
+
+.pull-left[
+```{r, echo=FALSE, out.width='20%', fig.align='center', fig.cap=''}
+knitr::include_graphics('fig/sh.png')
+```
+
+.thick[.black[Biblioteca Shiny]]
+
+.black[Biblioteca que facilita a criação de aplicativos da Web interativos usando diretamente a Linguagem R.]
+
+.thick[.black[Shinyapps.io:]]
+
+.black[Servidor gratuito para hospedar os aplicativos Shiny.]
+<BR>
+
+.thick[.black[Acesse aplicações para predição de biomassa e volume:]]
+
+[1-Shiny-MLMBio-Biomassa](https://deivisonsouza.shinyapps.io/MLBiomass/)
+
+[2-Shiny-MLMVol-Volume](https://deivisonsouza.shinyapps.io/MLVolume/)
+]
 
 ---
 # Referências
