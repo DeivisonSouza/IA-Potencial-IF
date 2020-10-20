@@ -24,7 +24,7 @@ class: center, middle, inverse, title-slide
 ## Técnicas, Modelagem e Aplicação Web <BR> <BR>
 ### <BR> Prof. Dr. Deivison Venicio Souza
 ### <div class="line-block">Universidade Federal do Pará (UFPA) <BR> <span class="isDisabled"><a href="E-mail: deivisonvs@ufpa.br">E-mail: deivisonvs@ufpa.br</a></span> <BR> <BR></div>
-### <p>.center[19/outubro/2020 | Altamira, Pará <BR> ]</p>
+### <p>.center[20/outubro/2020 | Altamira, Pará <BR> ]</p>
 
 ---
 
@@ -136,18 +136,18 @@ document.addEventListener('DOMContentLoaded', addLogo)
 Email: deivisonvs@ufpa.br
 ]
 
----
-# A IA está no cotidiano!
+&lt;!-- --- --&gt;
+&lt;!-- # A IA está no cotidiano! --&gt;
 
-* &lt;bdi style="font-weight:bold"&gt;1. Reconhecimento Facial&lt;/bdi&gt; (Face Recognition)
-    
- + Como o `Facebook` é capaz de reconhecer uma pessoa em uma foto?
-    
-* &lt;bdi style="font-weight:bold"&gt;2. Sistemas de Recomendação&lt;/bdi&gt; (*Recommendation Systems*)
-    
- + Como o `Google Maps` é capaz de traçar a melhor rota para um destino?
-    
- + Como a `NetFlix` faz para recomendar séries e filmes (e outros) para os usuários? [(SR NetFlix)](https://help.netflix.com/pt/node/100639)
+&lt;!-- * &lt;bdi style="font-weight:bold"&gt;1. Reconhecimento Facial&lt;/bdi&gt; (Face Recognition) --&gt;
+
+&lt;!--  + Como o `Facebook` é capaz de reconhecer uma pessoa em uma foto? --&gt;
+
+&lt;!-- * &lt;bdi style="font-weight:bold"&gt;2. Sistemas de Recomendação&lt;/bdi&gt; (*Recommendation Systems*) --&gt;
+
+&lt;!--  + Como o `Google Maps` é capaz de traçar a melhor rota para um destino? --&gt;
+
+&lt;!--  + Como a `NetFlix` faz para recomendar séries e filmes (e outros) para os usuários? [(SR NetFlix)](https://help.netflix.com/pt/node/100639) --&gt;
 
 ---
 # Aprendizado de Máquina (*Machine Learning*)
@@ -182,23 +182,45 @@ Email: deivisonvs@ufpa.br
 .left[.footnote[Fonte: O Autor.]]
 
 ---
-# AM no Inventário Florestal: técnicas e estudos promissores
+# AM no Inventário Florestal: estudos indicam potencial!
 
 &lt;img src="fig/ML-TEC.png" width="80%" style="display: block; margin: auto;" /&gt;
 .left[.footnote[Fonte: O Autor.]]
 
+
+```r
+Citep(myBib, c("diamantopoulou2010modelling", "nieto2012support", "sanquetta2013use", "diamantopoulou2005artificial", "ozccelik2010estimating", "schikowski2015estudo", "nunes2016artificial", "Corte2020", "montano2017artificial", "korhonen1997application", "maltamo2001most", "fehrmann2008comparison", "sanquetta2015comparison", "sanquetta2018volume", "souza2019"))
+```
+
+```
+## [1] "(Diamantopoulou and Milios, 2010; Nieto, Torres, Fernández, and Galán, 2012; Sanquetta, Wojciechowski, Dalla Corte, Rodrigues, and Maas, 2013; Diamantopoulou, 2005; Özçelik, Diamantopoulou, Brooks, and Wiant Jr, 2010; Schikowski, Corte, and Sanquetta, 2015; Nunes and Görgens, 2016; Corte, Souza, Rex, Sanquetta, Mohan, Silva, Zambrano, Prata, de\nAlmeida, Trautenmüller, Klauberg, de\nMoraes, Sanquetta, Wilkinson, and Broadbent, 2020; Montaño, Sanquetta, Wojciechowski, Mattar, Dalla Corte, and Todt, 2017; Korhonen and Kangas, 1997; Maltamo and Eerikainen, 2001; Fehrmann, Lehtonen, Kleinn, and Tomppo, 2008; Sanquetta, Wojciechowski, Dalla Corte, Behling, Netto, Rodrigues, and Sanquetta, 2015; Sanquetta, Piva, Wojciechowski, Corte, and Schikowski, 2018; Souza, Nievola, Santos, Wojciechowski, Gonçalves, Corte, and Sanquetta, 2019)"
+```
+
 ---
-# Modelagem preditiva: linguagens (softwares) e frameworks
+class: middle, center
+# Aprendizado de máquina com linguagem R
 
-&lt;img src="index_files/figure-html/unnamed-chunk-5-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+.pull-left[
 
+.thick[Alguns pacotes publicados no Cran Task View: Machine Learning &amp; Statistical learning]
 
+&lt;img src="fig/ML-FR.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;BR&gt; &lt;BR&gt; &lt;BR&gt; &lt;BR&gt; &lt;BR&gt;
+Veja outros pacotes disponíveis em Task View:
+
+[Machine Learning &amp; Statistical learning](https://cran.r-project.org/)
+]
+
+.left[.footnote[Fonte: O Autor.]]
 
 ---
 background-image: url(fig/white.jpg)
 background-size: cover
 
-# Framework CARET - Linguagem R
+# Pacote CARET: um framework para aprendizado de máquina
 
 .font300[.thick[CARET]]
 	
@@ -243,7 +265,39 @@ background-size: cover
 .left[.footnote[Créditos: Imagem de .green[Willas Soares].]]
 
 ---
+# Referências
+&lt;br&gt;
 
+&lt;p&gt;&lt;cite&gt;Corte, A. P. D, D. V. Souza, F. E. Rex, et al.
+(2020).
+&amp;ldquo;Forest inventory with high-density UAV-Lidar: Machine learning approaches for predicting individual tree attributes&amp;rdquo;.
+In: &lt;em&gt;Computers and Electronics in Agriculture&lt;/em&gt; 179, p. 105815.
+DOI: &lt;a href="https://doi.org/10.1016/j.compag.2020.105815"&gt;10.1016/j.compag.2020.105815&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Diamantopoulou, M. J.
+(2005).
+&amp;ldquo;Artificial neural networks as an alternative tool in pine bark volume estimation&amp;rdquo;.
+In: &lt;em&gt;Computers and electronics in agriculture&lt;/em&gt; 48.3, pp. 235&amp;ndash;244.
+DOI: &lt;a href="https://doi.org/10.1016/j.compag.2005.04.002"&gt;10.1016/j.compag.2005.04.002&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Diamantopoulou, M. J. and E. Milios
+(2010).
+&amp;ldquo;Modelling total volume of dominant pine trees in reforestations via multivariate analysis and artificial neural network models&amp;rdquo;.
+In: &lt;em&gt;Biosystems engineering&lt;/em&gt; 105.3, pp. 306&amp;ndash;315.
+DOI: &lt;a href="https://doi.org/10.1016/j.biosystemseng.2009.11.010"&gt;10.1016/j.biosystemseng.2009.11.010&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Fehrmann, L, A. Lehtonen, C. Kleinn, et al.
+(2008).
+&amp;ldquo;Comparison of linear and mixed-effect regression models and ak-nearest neighbour approach for estimation of single-tree biomass&amp;rdquo;.
+In: &lt;em&gt;Canadian Journal of Forest Research&lt;/em&gt; 38.1, pp. 1&amp;ndash;9.
+DOI: &lt;a href="https://doi.org/10.1139/X07-119"&gt;10.1139/X07-119&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Korhonen, K. T. and A. Kangas
+(1997).
+&amp;ldquo;Application of nearest-neighbour regression for generalizing sample tree information&amp;rdquo;.
+In: &lt;em&gt;Scandinavian Journal of Forest Research&lt;/em&gt; 12.1, pp. 97&amp;ndash;101.
+DOI: &lt;a href="https://doi.org/10.1080/02827589709355389"&gt;10.1080/02827589709355389&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+---
 # Referências
 &lt;br&gt;
 
@@ -259,11 +313,83 @@ URL: &lt;a href="https://CRAN.R-project.org/package=caret"&gt;https://CRAN.R-pro
 Vol. 810.
 Springer.&lt;/cite&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;cite&gt;Maltamo, M. and K. Eerikainen
+(2001).
+&amp;ldquo;The most similar neighbour reference in the yield prediction of Pinus kesiya stands in Zambia&amp;rdquo;.
+In: &lt;em&gt;Silva Fennica&lt;/em&gt; 35.4, pp. 437&amp;ndash;451.
+DOI: &lt;a href="https://doi.org/10.14214/sf.579"&gt;10.14214/sf.579&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Montaño, R. A. N. R, C. R. Sanquetta, J. Wojciechowski, et al.
+(2017).
+&amp;ldquo;Artificial Intelligence Models to Estimate Biomass of Tropical Forest Trees&amp;rdquo;.
+In: &lt;em&gt;Polibits&lt;/em&gt; 56, pp. 29&amp;ndash;37.
+DOI: &lt;a href="https://doi.org/10.17562/PB-56-4"&gt;10.17562/PB-56-4&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Nieto, P. G, J. M. Torres, M. A. Fernández, et al.
+(2012).
+&amp;ldquo;Support vector machines and neural networks used to evaluate paper manufactured using Eucalyptus globulus&amp;rdquo;.
+In: &lt;em&gt;Applied Mathematical Modelling&lt;/em&gt; 36.12, pp. 6137&amp;ndash;6145.
+DOI: &lt;a href="https://doi.org/10.1016/j.apm.2012.02.016"&gt;10.1016/j.apm.2012.02.016&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+---
+# Referências
+&lt;br&gt;
+
+&lt;p&gt;&lt;cite&gt;Nunes, M. H. and E. B. Görgens
+(2016).
+&amp;ldquo;Artificial intelligence procedures for tree taper estimation within a complex vegetation mosaic in Brazil&amp;rdquo;.
+In: &lt;em&gt;PloS one&lt;/em&gt; 11.5, p. e0154738.
+DOI: &lt;a href="https://doi.org/10.1371/journal.pone.0154738"&gt;10.1371/journal.pone.0154738&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Özçelik, R, M. J. Diamantopoulou, J. R. Brooks, et al.
+(2010).
+&amp;ldquo;Estimating tree bole volume using artificial neural network models for four species in Turkey&amp;rdquo;.
+In: &lt;em&gt;Journal of environmental management&lt;/em&gt; 91.3, pp. 742&amp;ndash;753.
+DOI: &lt;a href="https://doi.org/10.1016/j.jenvman.2009.10.002"&gt;10.1016/j.jenvman.2009.10.002&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;cite&gt;Samuel, A. L.
 (1959).
 &amp;ldquo;Some studies in machine learning using the game of checkers&amp;rdquo;.
 In: &lt;em&gt;IBM Journal of research and development&lt;/em&gt;, pp. 211&amp;ndash;229.
 DOI: &lt;a href="https://doi.org/10.1147/rd.33.0210"&gt;10.1147/rd.33.0210&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Sanquetta, C. R, L. R. Piva, J. Wojciechowski, et al.
+(2018).
+&amp;ldquo;Volume estimation of Cryptomeria japonica logs in southern Brazil using artificial intelligence models&amp;rdquo;.
+In: &lt;em&gt;Southern Forests: a Journal of Forest Science&lt;/em&gt; 80.1, pp. 29&amp;ndash;36.
+DOI: &lt;a href="https://doi.org/10.2989/20702620.2016.1263013"&gt;10.2989/20702620.2016.1263013&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Sanquetta, C. R, J. Wojciechowski, A. P. Dalla Corte, et al.
+(2015).
+&amp;ldquo;Comparison of data mining and allometric model in estimation of tree biomass&amp;rdquo;.
+In: &lt;em&gt;BMC bioinformatics&lt;/em&gt; 16.1, p. 247.
+DOI: &lt;a href="https://doi.org/10.1186/s12859-015-0662-5"&gt;10.1186/s12859-015-0662-5&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+---
+# Referências
+&lt;br&gt;
+
+
+```
+## Warning in `[[.BibEntry`(x, ind): subscript out of bounds
+```
+
+&lt;p&gt;&lt;cite&gt;Sanquetta, C. R, J. Wojciechowski, A. P. Dalla Corte, et al.
+(2013).
+&amp;ldquo;On the use of data mining for estimating carbon storage in the trees&amp;rdquo;.
+In: &lt;em&gt;Carbon balance and management&lt;/em&gt; 8.1, p. 6.
+DOI: &lt;a href="https://doi.org/10.1186/1750-0680-8-6"&gt;10.1186/1750-0680-8-6&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Schikowski, A. B, A. P. D. Corte, and C. R. Sanquetta
+(2015).
+&amp;ldquo;Estudo da forma do fuste utilizando redes neurais artificiais e funções de afilamento&amp;rdquo;.
+In: &lt;em&gt;Pesquisa Florestal Brasileira&lt;/em&gt; 35.82, pp. 119&amp;ndash;127.
+DOI: &lt;a href="https://doi.org/10.4336/2015.pfb.35.82.867"&gt;10.4336/2015.pfb.35.82.867&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Souza, D. V, J. C. Nievola, J. X. Santos, et al.
+(2019).
+&amp;ldquo;k-Nearest Neighbor Regression in the Estimation of Tectona Grandis Trunk Volume in the State of Pará, Brazil&amp;rdquo;.
+In: &lt;em&gt;Journal of Sustainable Forestry&lt;/em&gt; 38.8, p. 755–768.
+DOI: &lt;a href="https://doi.org/10.1080/10549811.2019.1607391"&gt;10.1080/10549811.2019.1607391&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
 ---
 class: inverse, middle
 background-image: url(fig/white.jpg)
@@ -285,6 +411,56 @@ background-size: cover
 
 ]
 ]
+
+&lt;!-- # Modelagem preditiva: linguagens (softwares) e frameworks --&gt;
+
+&lt;!-- ```{r, engine='tikz', cache=TRUE, echo=FALSE, out.width='50%', fig.ext = 'png', bg = "transparent"} --&gt;
+&lt;!-- \usetikzlibrary{mindmap} --&gt;
+&lt;!-- \begin{tikzpicture} --&gt;
+&lt;!-- 		[mindmap, --&gt;
+&lt;!-- 		every node/.style={concept, execute at begin node=\hskip0pt, font=\bfseries}, --&gt;
+&lt;!-- 		root concept/.append style={concept color=black, fill=white, line width=1ex, text=black, font=\huge\bfseries}, --&gt;
+&lt;!-- 		method a/.style={concept color=red, line width=1ex, text=white}, --&gt;
+&lt;!-- 		method b/.style={concept color=orange, line width=1ex, text=white}, --&gt;
+&lt;!-- 		method c/.style={concept color=brown, line width=1ex, text=white}, --&gt;
+&lt;!-- 		methods a/.style={concept color=red!50, line width=1ex, text=black}, --&gt;
+&lt;!-- 		methods b/.style={concept color=orange!50, line width=1ex, text=black}, --&gt;
+&lt;!-- 		methods c/.style={concept color=brown!50, line width=1ex, text=black}, --&gt;
+&lt;!-- 		grow cyclic, --&gt;
+&lt;!-- 		level 1/.append style={level distance=4.5cm, sibling angle=60}, --&gt;
+&lt;!-- 		level 2/.append style={level distance=3cm, sibling angle=45}] --&gt;
+&lt;!-- 		\node [root concept] {Liguagens/ \\ Software} % root --&gt;
+&lt;!-- 		child [missing] {} --&gt;
+&lt;!-- 		child [missing] {} --&gt;
+&lt;!-- 		child [missing] {} --&gt;
+&lt;!-- 		child [method a] { node {Python} --&gt;
+&lt;!-- 			child [methods a] { node {A1} } --&gt;
+&lt;!-- 			child [methods a] { node {A2} } --&gt;
+&lt;!-- 			child [methods a] { node {A3} } --&gt;
+&lt;!-- 			child [methods a] { node {A4} } --&gt;
+&lt;!-- 			child [methods a] { node {A5} } --&gt;
+&lt;!-- 			child [methods a] { node {A6} } --&gt;
+&lt;!-- 			child [methods a] { node {A7} } } --&gt;
+&lt;!-- 		child [missing] {} --&gt;
+&lt;!-- 		child [method b] { node {R} --&gt;
+&lt;!-- 			child [methods b] { node {B1} } --&gt;
+&lt;!-- 			child [methods b] { node {B2} } --&gt;
+&lt;!-- 			child [methods b] { node {B3} } --&gt;
+&lt;!-- 			child [methods b] { node {B4} } --&gt;
+&lt;!-- 			child [methods b] { node {B5} } --&gt;
+&lt;!-- 			child [methods b] { node {B6} } --&gt;
+&lt;!-- 			child [methods b] { node {B7} } } --&gt;
+&lt;!-- 		child [missing] {} --&gt;
+&lt;!-- 		child [method c] { node {Weka} --&gt;
+&lt;!-- 			child [methods c] { node {C1} } --&gt;
+&lt;!-- 			child [methods c] { node {C2} } --&gt;
+&lt;!-- 			child [methods c] { node {C3} } --&gt;
+&lt;!-- 			child [methods c] { node {C4} } --&gt;
+&lt;!-- 			child [methods c] { node {C5} } --&gt;
+&lt;!-- 			child [methods c] { node {C6} } --&gt;
+&lt;!-- 			child [methods c] { node {C7} } }; --&gt;
+&lt;!-- 		\end{tikzpicture} --&gt;
+&lt;!-- ``` --&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -419,7 +595,7 @@ h1 {
 h2, h3, h4 {
   padding-top: -15px;
   padding-bottom: 00px;
-  color: #1A292C;
+  color: #FAFAFA;
   text-shadow: none;
   font-weight: 400;
   text-align: left;
@@ -488,7 +664,7 @@ h2, h3, h4 {
   margin-left: 15px;
 }
 .title-slide h3  {
-  color: #00004d;
+  color: #ffffff;
   text-shadow: none;
   font-weight: 300;
   font-size: 25px;

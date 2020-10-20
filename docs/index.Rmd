@@ -14,8 +14,6 @@ encoding: "UTF-8"
 header-includes: 
    - \usepackage{tikz}
    - \usepackage[hidelinks,pdfencoding=auto]{hyperref}
-   - \usepackage{verbatim}
-   - \usepackage[utf8]{inputenc}
 output:
   xaringan::moon_reader:
     includes:
@@ -163,18 +161,18 @@ knitr::include_graphics('fig/ORCID.png')
 Email: deivisonvs@ufpa.br
 ]
 
----
-# A IA está no cotidiano!
+<!-- --- -->
+<!-- # A IA está no cotidiano! -->
 
-* <bdi style="font-weight:bold">1. Reconhecimento Facial</bdi> (Face Recognition)
-    
- + Como o `Facebook` é capaz de reconhecer uma pessoa em uma foto?
-    
-* <bdi style="font-weight:bold">2. Sistemas de Recomendação</bdi> (*Recommendation Systems*)
-    
- + Como o `Google Maps` é capaz de traçar a melhor rota para um destino?
-    
- + Como a `NetFlix` faz para recomendar séries e filmes (e outros) para os usuários? [(SR NetFlix)](https://help.netflix.com/pt/node/100639)
+<!-- * <bdi style="font-weight:bold">1. Reconhecimento Facial</bdi> (Face Recognition) -->
+
+<!--  + Como o `Facebook` é capaz de reconhecer uma pessoa em uma foto? -->
+
+<!-- * <bdi style="font-weight:bold">2. Sistemas de Recomendação</bdi> (*Recommendation Systems*) -->
+
+<!--  + Como o `Google Maps` é capaz de traçar a melhor rota para um destino? -->
+
+<!--  + Como a `NetFlix` faz para recomendar séries e filmes (e outros) para os usuários? [(SR NetFlix)](https://help.netflix.com/pt/node/100639) -->
 
 ---
 # Aprendizado de Máquina (*Machine Learning*)
@@ -213,71 +211,44 @@ knitr::include_graphics('fig/MindMap.png')
 .left[.footnote[Fonte: O Autor.]]
 
 ---
-# AM no Inventário Florestal: técnicas e estudos promissores
+# AM no Inventário Florestal: estudos indicam potencial!
 
 ```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap='', dpi=600}
 knitr::include_graphics('fig/ML-TEC.png')
 ```
 .left[.footnote[Fonte: O Autor.]]
 
----
-# Modelagem preditiva: linguagens (softwares) e frameworks
-
-```{r, engine='tikz', cache=TRUE, echo=FALSE, out.width='50%', bg = "transparent"}
-\usetikzlibrary{mindmap}
-\begin{tikzpicture}
-		[mindmap,
-		every node/.style={concept, execute at begin node=\hskip0pt, font=\bfseries},
-		root concept/.append style={concept color=black, fill=white, line width=1ex, text=black, font=\huge\bfseries},
-		method a/.style={concept color=red, line width=1ex, text=white},
-		method b/.style={concept color=orange, line width=1ex, text=white},
-		method c/.style={concept color=brown, line width=1ex, text=white},
-		methods a/.style={concept color=red!50, line width=1ex, text=black},
-		methods b/.style={concept color=orange!50, line width=1ex, text=black},
-		methods c/.style={concept color=brown!50, line width=1ex, text=black},
-		grow cyclic,
-		level 1/.append style={level distance=4.5cm, sibling angle=60},
-		level 2/.append style={level distance=3cm, sibling angle=45}]
-		\node [root concept] {Liguagens/ \\ Software} % root
-		child [missing] {}
-		child [missing] {}
-		child [missing] {}
-		child [method a] { node {Python}
-			child [methods a] { node {A1} }
-			child [methods a] { node {A2} }
-			child [methods a] { node {A3} }
-			child [methods a] { node {A4} }
-			child [methods a] { node {A5} }
-			child [methods a] { node {A6} }
-			child [methods a] { node {A7} } }
-		child [missing] {}
-		child [method b] { node {R}
-			child [methods b] { node {B1} }
-			child [methods b] { node {B2} }
-			child [methods b] { node {B3} }
-			child [methods b] { node {B4} }
-			child [methods b] { node {B5} }
-			child [methods b] { node {B6} }
-			child [methods b] { node {B7} } }
-		child [missing] {}
-		child [method c] { node {Weka}
-			child [methods c] { node {C1} }
-			child [methods c] { node {C2} }
-			child [methods c] { node {C3} }
-			child [methods c] { node {C4} }
-			child [methods c] { node {C5} }
-			child [methods c] { node {C6} }
-			child [methods c] { node {C7} } };
-		\end{tikzpicture}
+```{r}
+Citep(myBib, c("diamantopoulou2010modelling", "nieto2012support", "sanquetta2013use", "diamantopoulou2005artificial", "ozccelik2010estimating", "schikowski2015estudo", "nunes2016artificial", "Corte2020", "montano2017artificial", "korhonen1997application", "maltamo2001most", "fehrmann2008comparison", "sanquetta2015comparison", "sanquetta2018volume", "souza2019"))
 ```
 
+---
+class: middle, center
+# Aprendizado de máquina com linguagem R
 
+.pull-left[
+
+.thick[Alguns pacotes publicados no Cran Task View: Machine Learning & Statistical learning]
+
+```{r, echo=FALSE, out.width='90%', fig.align='center', fig.cap='', dpi=600}
+knitr::include_graphics('fig/ML-FR.png')
+```
+]
+
+.pull-right[
+<BR> <BR> <BR> <BR> <BR>
+Veja outros pacotes disponíveis em Task View:
+
+[Machine Learning & Statistical learning](https://cran.r-project.org/)
+]
+
+.left[.footnote[Fonte: O Autor.]]
 
 ---
 background-image: url(fig/white.jpg)
 background-size: cover
 
-# Framework CARET - Linguagem R
+# Pacote CARET: um framework para aprendizado de máquina
 
 .font300[.thick[CARET]]
 	
@@ -324,13 +295,34 @@ background-size: cover
 .left[.footnote[Créditos: Imagem de .green[Willas Soares].]]
 
 ---
-
 # Referências
 <br>
 
-```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(myBib)
+```{r refs1, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start = 1, end = 5)
 ```
+---
+# Referências
+<br>
+
+```{r refs2, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start = 6, end = 10)
+```
+---
+# Referências
+<br>
+
+```{r refs3, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start = 11, end = 15)
+```
+---
+# Referências
+<br>
+
+```{r refs4, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start = 16, end = 19)
+```
+
 ---
 class: inverse, middle
 background-image: url(fig/white.jpg)
@@ -353,6 +345,55 @@ background-size: cover
 ]
 ]
 
+<!-- # Modelagem preditiva: linguagens (softwares) e frameworks -->
+
+<!-- ```{r, engine='tikz', cache=TRUE, echo=FALSE, out.width='50%', fig.ext = 'png', bg = "transparent"} -->
+<!-- \usetikzlibrary{mindmap} -->
+<!-- \begin{tikzpicture} -->
+<!-- 		[mindmap, -->
+<!-- 		every node/.style={concept, execute at begin node=\hskip0pt, font=\bfseries}, -->
+<!-- 		root concept/.append style={concept color=black, fill=white, line width=1ex, text=black, font=\huge\bfseries}, -->
+<!-- 		method a/.style={concept color=red, line width=1ex, text=white}, -->
+<!-- 		method b/.style={concept color=orange, line width=1ex, text=white}, -->
+<!-- 		method c/.style={concept color=brown, line width=1ex, text=white}, -->
+<!-- 		methods a/.style={concept color=red!50, line width=1ex, text=black}, -->
+<!-- 		methods b/.style={concept color=orange!50, line width=1ex, text=black}, -->
+<!-- 		methods c/.style={concept color=brown!50, line width=1ex, text=black}, -->
+<!-- 		grow cyclic, -->
+<!-- 		level 1/.append style={level distance=4.5cm, sibling angle=60}, -->
+<!-- 		level 2/.append style={level distance=3cm, sibling angle=45}] -->
+<!-- 		\node [root concept] {Liguagens/ \\ Software} % root -->
+<!-- 		child [missing] {} -->
+<!-- 		child [missing] {} -->
+<!-- 		child [missing] {} -->
+<!-- 		child [method a] { node {Python} -->
+<!-- 			child [methods a] { node {A1} } -->
+<!-- 			child [methods a] { node {A2} } -->
+<!-- 			child [methods a] { node {A3} } -->
+<!-- 			child [methods a] { node {A4} } -->
+<!-- 			child [methods a] { node {A5} } -->
+<!-- 			child [methods a] { node {A6} } -->
+<!-- 			child [methods a] { node {A7} } } -->
+<!-- 		child [missing] {} -->
+<!-- 		child [method b] { node {R} -->
+<!-- 			child [methods b] { node {B1} } -->
+<!-- 			child [methods b] { node {B2} } -->
+<!-- 			child [methods b] { node {B3} } -->
+<!-- 			child [methods b] { node {B4} } -->
+<!-- 			child [methods b] { node {B5} } -->
+<!-- 			child [methods b] { node {B6} } -->
+<!-- 			child [methods b] { node {B7} } } -->
+<!-- 		child [missing] {} -->
+<!-- 		child [method c] { node {Weka} -->
+<!-- 			child [methods c] { node {C1} } -->
+<!-- 			child [methods c] { node {C2} } -->
+<!-- 			child [methods c] { node {C3} } -->
+<!-- 			child [methods c] { node {C4} } -->
+<!-- 			child [methods c] { node {C5} } -->
+<!-- 			child [methods c] { node {C6} } -->
+<!-- 			child [methods c] { node {C7} } }; -->
+<!-- 		\end{tikzpicture} -->
+<!-- ``` -->
 
 
 

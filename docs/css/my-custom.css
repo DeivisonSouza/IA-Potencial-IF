@@ -40,7 +40,7 @@ h1 {
 h2, h3, h4 {
   padding-top: -15px;
   padding-bottom: 00px;
-  color: #1A292C;
+  color: #FAFAFA;
   text-shadow: none;
   font-weight: 400;
   text-align: left;
@@ -109,7 +109,7 @@ h2, h3, h4 {
   margin-left: 15px;
 }
 .title-slide h3  {
-  color: #00004d;
+  color: #ffffff;
   text-shadow: none;
   font-weight: 300;
   font-size: 25px;
