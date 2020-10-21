@@ -341,7 +341,7 @@ background-size: cover
 ```{r, echo=FALSE, out.width='90%', fig.align='center', fig.cap=''}
 knitr::include_graphics('fig/FM.png')
 ```
-.left[.footnote[Fonte: Souza (2020).]]
+.left[.footnote[Fonte: `r Citet(myBib, "souza2020Tese")`.]]
 
 ---
 name: exemploR
@@ -384,11 +384,18 @@ knitr::include_graphics('fig/sh.png')
 .black[Servidor gratuito para hospedar os aplicativos Shiny.]
 <BR>
 
-.thick[.black[Acesse aplicações para predição de biomassa e volume:]]
+.thick[.black[Acesse aplicações Web para predição de biomassa e volume: (Souza, 2020)]]
 
+.font80[
 [1-Shiny-MLMBio-Biomassa](https://deivisonsouza.shinyapps.io/MLBiomass/)
 
 [2-Shiny-MLMVol-Volume](https://deivisonsouza.shinyapps.io/MLVolume/)
+]
+]
+
+.column-right[
+.thick[.black[Acesse a base para uso na aplicação MLMBio:]] [Biomass-data](https://deivisonsouza.github.io/IA-Potencial-IF/R-scripts/data.csv)]
+
 ]
 
 ---
