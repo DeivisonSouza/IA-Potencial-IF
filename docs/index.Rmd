@@ -305,7 +305,8 @@ knitr::include_graphics('fig/ML-FR.png')
 <BR> <BR>
 .thick[Web scraping feito em 21/07/2018:]
 
-102 pacotes de AM publicados no CRAN Task View.
+Até julho de 2018 existiam 102 pacotes sobre AM
+publicados no CRAN Task View.
 ]
 
 .left[.footnote[Fonte: O Autor.]]
@@ -330,6 +331,13 @@ background-size: cover
 Web page: [CARET Package](https://topepo.github.io/caret/index.html)
 
 .left[.footnote[Imagem de <a href="https://pixabay.com/pt/users/pen_ash-5526837/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5358904">pen_ash</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5358904">Pixabay</a>]]
+---
+# Pacote CARET: Ferramentas
+
+```{r, echo=FALSE, out.width='50%', fig.align='center', fig.cap='', dpi=600}
+knitr::include_graphics('fig/CARET.png')
+```
+
 ---
 name: fluxo
 background-image: url(fig/white.jpg)
