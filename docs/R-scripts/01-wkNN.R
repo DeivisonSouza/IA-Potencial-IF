@@ -3,8 +3,8 @@
 ###########################################################################
 
 ## 1: Instala pacotes necessários -----------------------------------------
-install.packages(c("caret", "data.table", "tidyverse",
-                   "rpart", "rpart.plot", "easypackages"))
+# install.packages(c("caret", "data.table", "tidyverse",
+#                    "rpart", "rpart.plot", "easypackages"))
 
 ## 2: Carrega conjunto de dados
 easypackages::libraries("caret","data.table","tidyverse",

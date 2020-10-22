@@ -202,6 +202,14 @@ background-size: cover
 ]
 
 ---
+# Aprendizado de Máquina: um subconjunto da IA!
+
+```{r, echo=FALSE, out.width='50%', fig.align='center', fig.cap='', dpi=600}
+knitr::include_graphics('fig/diag.png')
+```
+.left[.footnote[Fonte: [Bial-R](https://www.bial-r.com/2019/05/22/comprendre-le-machine-learning-et-le-deep-learning/)]]
+
+---
 name: AM
 # Aprendizado de Máquina (*Machine Learning*)
 
@@ -223,14 +231,6 @@ name: AM
 ] 
 
 ---
-# Aprendizado de Máquina: um subconjunto da IA!
-
-```{r, echo=FALSE, out.width='50%', fig.align='center', fig.cap='', dpi=600}
-knitr::include_graphics('fig/diag.png')
-```
-.left[.footnote[Fonte: [Bial-R](https://www.bial-r.com/2019/05/22/comprendre-le-machine-learning-et-le-deep-learning/)]]
-
----
 name: tipos
 # Tipos de Aprendizagem
 
@@ -243,22 +243,21 @@ knitr::include_graphics('fig/ML.png')
 name: AS
 # Aprendizado Supervisionado
 
-.bg-washed-near-white.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-.center[<bdi style="font-weight:bold"> *Classificação*</bdi>]
+```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap=''}
+knitr::include_graphics('fig/intuicao-ML.png')
+```
 
-Uma tarefa de classificação é quando a .thick[variável resposta é uma categoria].
+.left[.footnote[Fonte: O Autor.]] 
 
-Ex.: Reconhecimento de espécies florestais a partir de imagens.
-] 
+---
+name: MAM
+# Um modelo de aprendizado de máquina: CART
 
+```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap=''}
+knitr::include_graphics('fig/CART.png')
+```
 
-.bg-washed-near-white.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-.center[<bdi style="font-weight:bold"> *Regressão*</bdi>]
-
-Um tarefa de regressão é quando a .thick[variável resposta é um valor real (numérica)].
-
-Ex.: Biomassa, Volume, Altura de árvores, entre outros.
-] 
+.left[.footnote[Fonte: O Autor.]] 
 
 ---
 name: aplicacoes
