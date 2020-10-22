@@ -285,7 +285,7 @@ class: middle, center
 
 .thick[Alguns pacotes publicados no Cran Task View: Machine Learning & Statistical learning]
 
-```{r, echo=FALSE, out.width='90%', fig.align='center', fig.cap='', dpi=600}
+```{r, echo=FALSE, out.width='85%', fig.align='center', fig.cap='', dpi=600}
 knitr::include_graphics('fig/ML-FR.png')
 ```
 ]
