@@ -362,7 +362,7 @@ background-size: cover
 
 [Tectona-grandis](https://deivisonsouza.github.io/IA-Potencial-IF/R-scripts/Tectona.csv)]
 
-.left[.footnote[Créditos: Imagem de .green[Willas Soares].]]
+.left[.footnote[Créditos: Imagem de .green[Willas Lima].]]
 ---
 name: shiny
 class: inverse, top
