@@ -7,8 +7,8 @@ Este repositório guarda os arquivos .Rmd e .R usados na palestra
 assíncrona com tema **“Aprendizado de Máquina no Inventário Florestal:
 Técnicas, Modelagem e Aplicação Web”** ministrada pelo
 **Prof. Dr. Deivison Venicio Souza**, direcionada aos discentes da
-disciplina de inventário florestal no âmbito da especialização X da
-Universidade Federal do Paraná (UFPR).
+disciplina de **Inventário Florestal** no âmbito do **MBA em Manejo
+Florestal de Precisão** da Universidade Federal do Paraná (UFPR).
 
 # Slide da palestra
 
