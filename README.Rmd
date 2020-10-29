@@ -18,8 +18,7 @@ O slide da palestra assíncrona intitulada **"Aprendizado de Máquina no Invent�
 
 #:ledger: [Slide da apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/)
 
-#:ledger: [Video da apresentação](https://1drv.ms/u/s!Am04tQCHXc03ifQbkA2_nyCLknBcOA?e=1GxmZ9)
-
+#:ledger: [Video da apresentação](https://1drv.ms/u/s!Am04tQCHXc03ifQbyR3Smjfm1tfQbA?e=zMyGo1)
 
 # Palestrante :deciduous_tree:
 
