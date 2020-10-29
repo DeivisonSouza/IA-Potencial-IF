@@ -20,7 +20,7 @@ disponível a seguir.
 apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/)
 
 \#:ledger: [Video da
-apresentação](https://1drv.ms/u/s!Am04tQCHXc03ifQbyR3Smjfm1tfQbA?e=zMyGo1)
+apresentação](https://drive.google.com/file/d/1_TrpwiZgdHbQM5Mmuw6O03-Y3HbeDuj3/view?usp=sharing)
 
 # Palestrante :deciduous\_tree:
 
