@@ -3,12 +3,10 @@
 ###########################################################################################
 
 ## 1: Instala pacotes necessários -----------------------------------------
-# install.packages(c("caret", "data.table", "tidyverse",
-#                    "rpart", "rpart.plot", "easypackages"))
+# install.packages(c("caret", "data.table", "tidyverse", "kknn", "easypackages"))
 
-## 2: Carrega conjunto de dados
-easypackages::libraries("caret","data.table","tidyverse",
-                        "rpart", "rpart.plot")
+## 2: Carrega pacotes necessários -----------------------------------------
+easypackages::libraries("caret","data.table","tidyverse","kknn")
 
 ## 3: Carrega conjunto de dados -------------------------------------------
 data <- fread("./docs/R-scripts/Tectona.csv", stringsAsFactors=T)
@@ -39,14 +37,10 @@ testSet <- data[-trainIndex,]
 source("./docs/R-scripts/Summary.R")
 
 fitControl <- trainControl(method = "LOOCV",
-                           returnResamp = "final",
-                           savePredictions = TRUE,
-                           allowParallel = T,
                            summaryFunction = Summary,
                            verboseIter = T,
                            selectionFunction = "best")
 
-## 8: Construção de modelos preditivos -----------------------------------
 
 ### 8.1: Hiperparâmetros candidatos --------------------------------------
 tuneGrid <- expand.grid(kmax = seq(1,10,1),
@@ -73,7 +67,7 @@ setorder(results.m_knn, RMSE)
 
 # Salva e ler os modelos
 saveRDS(m_knn,'m_knn.rds')
-# m_knn <- readRDS('m_knn.rds')
+m_knn <- readRDS('m_knn.rds')
 
 # Desempenho no conjunto de teste
 (pred <- predict(m_knn, testSet))

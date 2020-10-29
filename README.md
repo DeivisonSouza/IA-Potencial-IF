@@ -19,6 +19,9 @@ disponível a seguir.
 \#:ledger: [Slide da
 apresentação](https://deivisonsouza.github.io/IA-Potencial-IF/)
 
+\#:ledger: [Video da
+apresentação](https://1drv.ms/u/s!Am04tQCHXc03ifQbkA2_nyCLknBcOA?e=1GxmZ9)
+
 # Palestrante :deciduous\_tree:
 
 **Deivison Venicio Souza** possui graduação em :deciduous\_tree:
